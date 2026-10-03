@@ -1,0 +1,44 @@
+# Python runtime and build output
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+coverage.xml
+htmlcov/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+
+# Local AWS and deployment artifacts
+eventbridge-test.json
+.aws-sam/
+.serverless/
+.terraform/
+terraform.tfstate
+terraform.tfstate.*
+lambda-package/
+build/
+dist/
+*.zip
+
+# Generated files and logs
+tmp/
+output/
+*.log
+
+# IDE and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Legacy monolithic source retained locally only
+app.py
